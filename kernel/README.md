@@ -1,3 +1,5 @@
+
+
 # Custom Linux kernel for LCOW
 
 Here you will find the steps to build a custom kernel for the
@@ -37,6 +39,9 @@ this instructions is to get them from a developer repository and
 assuming you have a _Linux GIT repository_  already
 
 ```
+# If you just got a source tarball and not a git repo, you need this line
+# git init
+
 git config --global user.name "yourname"
 git config --global user.email youremailaddress 
  
