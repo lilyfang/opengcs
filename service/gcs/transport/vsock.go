@@ -34,6 +34,7 @@ func (t *VsockTransport) Dial(port uint32) (Connection, error) {
 			logrus.Infof("vsock Connect port (%d)", port)
 			return conn, nil
 		}
+		logrus.Infof("vsockDial got an error %#v", err)
 		if err != unix.ETIMEDOUT {
 			return nil, errors.Wrap(err, "failed connecting the VsockConnection")
 		}

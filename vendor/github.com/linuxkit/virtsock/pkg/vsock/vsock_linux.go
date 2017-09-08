@@ -40,7 +40,7 @@ func Dial(cid, port uint32) (Conn, error) {
 				continue
 			}
 			return nil, errors.New(fmt.Sprintf(
-				"failed connect() to %08x.%08x: %s", cid, port, err))
+				"failed connect() to %08x.%08x: %#v", cid, port, err))
 		}
 		break
 	}
